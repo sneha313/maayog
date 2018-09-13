@@ -1,0 +1,59 @@
+@media screen and (max-width: 768px) {
+  .navbar.navbar-transparent {
+		background-color: #fcfcfc;
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+		border-radius: 0px;
+		border-bottom: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	.dropdown-content {
+		padding: 0px 15px;
+		display: none;
+		position: absolute;
+		margin-left: 0px;
+		margin-right: -200px;
+		background-color: #f9f9f9;
+		min-width: 260px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		max-height: 200px;
+	}
+	.sidebar .nav i, .off-canvas-sidebar .nav i {
+		font-size: 24px;
+		float: left;
+		margin-right: 15px;
+		line-height: 17px;
+		width: 5px;
+		text-align: center;
+		color: #f9f9f9;
+	}
+	.main-panel>.footer {
+		border-top: 1px solid #e7e7e7;
+		background-color: #fcfcfc;
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+		padding: 0 20px 0 0;
+		margin: 0;
+		bottom: 0;
+		position: fixed;
+		width: 100%;
+	}
+	.navbar-form .SearchWidth {
+		width: 162px;
+	}
+	.sidebar .nav li>a, .off-canvas-sidebar .nav li>a {
+		margin: 10px 15px 0;
+		border-radius: 3px;
+		color: #ffffff;
+	}
+	.main-panel>.content {
+		margin-top: 55px;
+		padding: 30px 25px !important;
+		min-height: calc(100% - 123px);
+		margin-bottom: 25px
+	}
+	.form-group .form-control {
+		width: 100%;
+	}
+}

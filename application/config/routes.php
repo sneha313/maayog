@@ -1,0 +1,65 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/*
+| -------------------------------------------------------------------------
+| URI ROUTING
+| -------------------------------------------------------------------------
+| This file lets you re-map URI requests to specific controller functions.
+|
+| Typically there is a one-to-one relationship between a URL string
+| and its corresponding controller class/method. The segments in a
+| URL normally follow this pattern:
+|
+|	example.com/class/method/id/
+|
+| In some instances, however, you may want to remap this relationship
+| so that a different class/function is called than the one
+| corresponding to the URL.
+|
+| Please see the user guide for complete details:
+|
+|	http://codeigniter.com/user_guide/general/routing.html
+|
+| -------------------------------------------------------------------------
+| RESERVED ROUTES
+| -------------------------------------------------------------------------
+|
+| There area two reserved routes:
+|
+|	$route['default_controller'] = 'welcome';
+|
+| This route indicates which controller class should be loaded if the
+| URI contains no data. In the above example, the "welcome" class
+| would be loaded.
+|
+|	$route['404_override'] = 'errors/page_missing';
+|
+| This route will tell the Router what URI segments to use if those provided
+| in the URL cannot be matched to a valid route.
+|
+*/
+
+$route['default_controller'] = "User";
+$route['404_override'] = '';
+
+$route['login'] = 'User/index';
+$route['logout'] = 'User/logout';
+$route['user-profile'] = 'User/userProfileDetail';
+//$route['edit-user'] = 'User/editUserDetail';
+$route['register'] = 'User/register';
+$route['forgotpwd'] = 'User/forgot_password';
+$route['dashboard'] = 'User/dashboard';
+$route['dashboard_login'] = 'User/check_login';
+$route['class-calendar'] = 'User/eventManagement';
+$route['class-calendar/(:any)'] = 'User/eventManagement/$1';
+$route['contact'] = 'User/contact';
+$route['contact/(:any)'] = 'User/contact/$1';
+// $route['refer-a-friend'] = 'User/contact';
+$route['make-payment'] = 'User/payForYoga';
+$route['view-payment/(:any)'] = 'User/viewPayment/$1';
+$route['payment-history'] = 'User/paymentHistory';
+$route['edit-user-detail'] = 'User/edituserProfile';
+$route['notification'] = 'User/getNotification';
+$route['payment-request'] = 'User/paymentRequest';
+$route['payment-response'] = 'User/paymentResponse';
+/* End of file routes.php */
+/* Location: ./application/config/routes.php */
